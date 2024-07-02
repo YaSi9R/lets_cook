@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import ProfileMenu from "./ProfileMenu";
 
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const toggleMenu = () => {
+  function toggleMenu() {
     setShowMenu(!showMenu);
 
   };
 
-  const closeMenu = () => {
-    setShowMenu(false);
-  };
+
   // const [open, setOpen] = useState(false);
   return (
 
@@ -70,8 +69,10 @@ const Header = () => {
 
 
 
-          <div className="profile_menu">
-            <a href="#" onClick={toggleMenu}>
+          
+           <ProfileMenu/>
+
+            {/* <a href="#" onClick={toggleMenu}>
               <span className="material-symbols-outlined text-white">
                 account_circle
               </span>
@@ -79,12 +80,11 @@ const Header = () => {
 
             {showMenu && (
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="#" onClick={closeMenu}>Log In</Link></li>
-                <li><Link className="dropdown-item" to="#" onClick={closeMenu}>Register</Link></li>
-                {/* <li><Link className="dropdown-item" to="#" onClick={closeMenu}>Something else here</Link></li> */}
+                <li><Link className="dropdown-item" to="#">Log In</Link></li>
+                <li><Link className="dropdown-item" to="#">Register</Link></li>
               </ul>
-            )}
-          </div>
+            )} */}
+         
 
 
 
@@ -110,7 +110,6 @@ const Header = () => {
           <h1>The Easiest Way<br /> To Make Your<br /> Favourite Meal</h1>
           <p>Discover 1000+ recipes in your hand with the best recipe.<br />
             Help you to find the easiest way to cook.</p>
-          {/* <button type="button" class="btn btn-success">Explore Recipes</button> */}
           <Link to="/explore-recipes" className=" btn btn-success w-[220px]" role="button">
             Explore Recipes
           </Link>
