@@ -22,7 +22,8 @@
 
 }
 .navbar{
-    background-color:#2A5846 ;
+    /* background-color:#2A5846 ; */
+    background-color: #d0b58f;
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -45,11 +46,22 @@
     justify-content: space-between;
     margin-bottom: 0;
     margin-left: 480px;
+    
 }
+.navBar-Items a {
+  text-decoration: none !important;
+}
+
 .search_form{
    
     padding-left: 30px;
 }
+
+.form_search_button:hover {
+  background-color: #795833 !important;
+ 
+}
+
 /* .profile_menu{
    color: white;
    cursor: pointer;
@@ -81,7 +93,8 @@
     position: absolute;
     
     background-color: transparent;
-    color: white;
+    /* color: white; */
+    color: #795833;
     /* align-items: center; */
     left: 50%;
     top: 50%;
@@ -97,18 +110,34 @@
     margin-left: 150px; 
     text-align: left;
     white-space: pre-line;
-
+    /* font-family: 'Dancing Script', cursive; */
     
    
   }
+
+
+/* .playwrite-gb-s-text_block {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 65px;
+  font-style: normal;
+} */
   .text_block h1{
     text-align: left;
     white-space: pre-line;
-    font-size: 65px;
+    font-size: 75px;
     /* font-family: "Roboto",sans-serif; */
     /* font-weight: 400; */
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 15px;
   }
   .text_block p{
     text-align: left;
     white-space: pre-line;
+    /* font-family: 'Dancing Script', cursive; */
+    padding-bottom: 15px;
+  }
+  .button{
+    
+    background-color: #795833 !important;
   }

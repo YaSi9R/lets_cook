@@ -53,5 +53,7 @@
 }
 
 .dropdown-item:hover {
-    background-color: #198754 !important; /* Override any other styles */
+    background-color: #795833 !important;
+    color: white !important;
+     /* Override any other styles */
 }
