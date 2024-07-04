@@ -1,7 +1,16 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+ font-family: ' Source Sans Pro', sans-serif;
+ background-size: cover !important;
+ box-sizing: border-box;
+}
 .section_background{
     position: relative;
     text-align: center;
+    background-size: cover !important;
+
 }
 .background_image{
     /* padding-top: 5px; */
@@ -32,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-size: cover;
     
 }
 .logo-navbar{

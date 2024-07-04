@@ -5,12 +5,7 @@ import ProfileMenu from "./ProfileMenu";
 
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  function toggleMenu() {
-    setShowMenu(!showMenu);
-
-  };
+  
 
 
   // const [open, setOpen] = useState(false);

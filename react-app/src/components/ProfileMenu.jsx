@@ -41,7 +41,7 @@ const ProfileMenu = ({ to }) => {
             </button>
 
             <ul className={`dropdown-menu ${showMenu ? 'show' : ''}`}>
-{/*                 <li className='justify-start'>
+                {/*                 <li className='justify-start'>
                     <Link className="dropdown-item" to="LogIn_Page" onClick={closeMenu}>
                         Log In
                         <span className="material-symbols-outlined pl-6">
@@ -58,21 +58,21 @@ const ProfileMenu = ({ to }) => {
                     </Link>
                 </li> */}
                 <li className='justify-start'>
-          <Link className="dropdown-item" to="/" onClick={closeMenu}>
-            Home
-            <span className="material-symbols-outlined pl-4">
-              home
-            </span>
-          </Link>
-        </li>
-        <li className='justify-start'>
-          <Link className="dropdown-item" to="/login-signup" onClick={closeMenu}>
-            Login/Signup
-            <span className="material-symbols-outlined pl-4">
-              login
-            </span>
-          </Link>
-        </li>
+                    <Link className="dropdown-item" to="/" onClick={closeMenu}>
+                        Home
+                        <span className="material-symbols-outlined pl-4">
+                            home
+                        </span>
+                    </Link>
+                </li>
+                <li className='justify-start'>
+                    <Link className="dropdown-item" to="/login-signup" onClick={closeMenu}>
+                        Login/Signup
+                        <span className="material-symbols-outlined pl-4">
+                            login
+                        </span>
+                    </Link>
+                </li>
             </ul>
         </div>
     );
