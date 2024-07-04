@@ -9,12 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 
-* {
+/* App.css */
+body, html, .website {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-   font-family: ' Source Sans Pro', sans-serif;
-   background-size: cover !important;
-   
+    height: 100%;
+    width: 100%;
+  }
+  
+  .website {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  
  
-}
+  
+

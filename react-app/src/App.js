@@ -6,14 +6,6 @@ import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import LoginSignupPage from './components/LoginSignupPage';
 
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Main />
-    </BrowserRouter>
-  );
-}
-
 function Main() {
   const location = useLocation();
   const isLoginSignupPage = location.pathname === '/login-signup';
@@ -31,5 +23,16 @@ function Main() {
     </>
   );
 }
+
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
+  );
+}
+
 
 export default App;
