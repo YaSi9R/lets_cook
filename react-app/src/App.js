@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter , Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+import LoginSignupPage from './components/LoginSignupPage';
 // import Home from "./pages/Home";
 
 // import Consulting from "./pages/Consulting";
@@ -18,7 +18,13 @@ import "./../node_modules/bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<home />} />
+          <Route path="/login-signup" element={<LoginSignupPage />} />
+
+          {/* Add more routes as needed */}
+        </Routes>
         <section
           className="website h-screen "
           >
@@ -37,8 +43,8 @@ function App() {
         </section>
 
        
-      </Router>
-    </>
+    </BrowserRouter>
+            </>
   );
 }
 
