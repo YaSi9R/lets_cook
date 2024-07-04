@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LoginSignupForm.css';
-import { FaUser, FaLock } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+// import { FaUser, FaLock } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
 
 
 const LoginSignupForm = () => {
@@ -13,19 +13,19 @@ const LoginSignupForm = () => {
                 <h1>{action}</h1>
                 <div className="input-box">
                     <input type="text" placeholder='Username' required />
-                    <FaUser className="icon" />
+{/*                     <FaUser className="icon" /> */}
 
                 </div>
                 {action === "Log In" ? <div></div> : <div className="input-box">
                     <input type="email" placeholder='email' required />
-                    <MdEmail className="icon" />
+{/*                     <MdEmail className="icon" /> */}
                 </div>}
 
 
 
                 <div className="input-box">
                     <input type="password" placeholder='Password' required />
-                    <FaLock className="icon" />
+{/*                     <FaLock className="icon" /> */}
                 </div>
 
 
