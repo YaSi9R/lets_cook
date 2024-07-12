@@ -1,11 +1,26 @@
+// Syntac of importing a components 
 const express = require('express')
-const app = express()
-const port = 3000
+const mongoose=require('mongoose')
+const routes=require('./routes')
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+const app = express()  //Making an object of express.js
+
+app.use(express.json())  //parse the json format
+app.use(routes)
+
+// Connecting mongodb databse with our project 
+mongoose.connect("mongodb://127.0.0.1/letscook",{
+  useNewUrlParser:true,
+  useUnifiedTopology: true
+})
+.then(()=>{
+  console.log("Connected to the database! ")
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+
+app.use(express.json())  //parse the json format
+// app.use(routes)
+
+app.listen(3001,()=>{
+  console.log(`Server is running at ${3001}`)
 })
