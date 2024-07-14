@@ -8,6 +8,7 @@ const Section = () => {
     // console.log(data.image_path)
     return (
         <div className="md:bg-[#faf2f1] md:pt-6 md:pb-8 lg:pt-8 lg:pb-10">
+            
             <div className="md:max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 px-0 lg:px-0">
 
 
@@ -52,10 +53,11 @@ const Section = () => {
 
             <div className="bg-[#f0dfc8]  h-auto  md:max-w-6xl mx-auto px-1 pt-0 pb-1 mt-3 md:mt-0 md:pb-0 lg:px-0">
                 {/* <a className="md:hidden btn bg-purple-500 block text-center" href="/all-recipes">+ View All Recipes</a> */}
+                
                 <div className=" overflow-x-scroll  pt-4 pb-3">
                     <ol className="flex space-x-6 w-full py-4">
                         {categories.map((category, index) => (
-                            <li className="block w-20 md:w-24 flex-grow flex-shrink-0 text-center" key={category.id}>
+                            <li className="block w-120 md:w-24 flex-grow flex-shrink-0 text-center" key={category.id}>
                                 <a className="block md:hover:opacity-60 flex flex-col items-center" href={`/${category.name}`}>
                                     <img
                                         width="183"
@@ -66,13 +68,14 @@ const Section = () => {
                                         sizes="(min-width: 780px) 96px, 80px"
                                     />
                                     <p className="font-sans text-sm font-bold text-[#795833] leading-tight capitalize no-underline"  style={{ textDecoration:"none"}}>
-                                        {category.name.replace(/-/g, ' ')}
+                                        {category.name.replace(/-/g, ' ')}   
                                     </p>
                                 </a>
                             </li>
                         ))}
                     </ol>
                 </div>
+
                 <div class=" relative flex  text-center items-center justify-center mb-10 md:max-w-3xl mx-auto justify-center  ">
                     <form method="GET" action="/search" class="relative drop-shadow-md text-center items-center  w-full flex  flex-row items-center  border-2 border-gray-400" role="search">
 

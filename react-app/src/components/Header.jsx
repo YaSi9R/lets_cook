@@ -5,7 +5,7 @@ import ProfileMenu from "./ProfileMenu";
 
 
 const Header = () => {
-  
+
 
 
   // const [open, setOpen] = useState(false);
@@ -64,29 +64,7 @@ const Header = () => {
 
 
 
-          
-           <ProfileMenu/>
-
-            {/* <a href="#" onClick={toggleMenu}>
-              <span className="material-symbols-outlined text-white">
-                account_circle
-              </span>
-            </a>
-
-            {showMenu && (
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="#">Log In</Link></li>
-                <li><Link className="dropdown-item" to="#">Register</Link></li>
-              </ul>
-            )} */}
-         
-
-
-
-
-
-
-          {/* <ProfileMenu /> */}
+          <ProfileMenu />
 
 
         </div>
