@@ -32,7 +32,7 @@ const Section = () => {
 
                 {sectionCards.map((data) => (
                     <article className="text-center md:max-w-6xl" key={data.id}>
-                        <a className="block md:hover:opacity-60 flex flex-col h-full  mx-0" href="/">
+                        <a className="block md:hover:opacity-60 flex flex-col h-full  mx-0" href="/InPage">
                             <img
                                 width="840"
                                 height="1200"
