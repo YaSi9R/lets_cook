@@ -1,0 +1,45 @@
+.carousel-container {
+    margin-left: 50px;
+  position: relative;
+  width: 1020px;
+  overflow: hidden;
+}
+
+.carousel-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+  width: 250px;
+  margin: 20px 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.carousel-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.prev-btn,.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:disabled,.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

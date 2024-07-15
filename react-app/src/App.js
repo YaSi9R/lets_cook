@@ -5,10 +5,12 @@ import Header from './components/Header';
 import Section from './components/Section';
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import LoginSignupPage from './components/LoginSignupPage';
+import InPage from './components/InPage';
 
 function Main() {
   const location = useLocation();
   const isLoginSignupPage = location.pathname === '/login-signup';
+  const isInPage = location.pathname === '/InPage';
 
   return (
     <>
@@ -24,6 +26,7 @@ function Main() {
           <Route path="/" element={<home />} />
           <Route path="/login-signup" element={<LoginSignupPage />} />
           {/* Add more routes as needed */}
+          <Route path="/InPage" element={<InPage />} />
         </Routes>
       </section>
     </>

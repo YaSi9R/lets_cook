@@ -1,0 +1,207 @@
+.wrapp {
+    background-color: #d0b58f;
+    min-height: 1900px;
+    max-height: auto;
+    position: relative;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aligned {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* changed from 1fr to 1fr 1fr */
+    align-items: center;
+    justify-items: space-between; /* changed from center to space-between */
+  }
+ 
+  .round-img {
+    margin-left: 25%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  h2{
+    color: brown;
+    font-family:cursive;
+  }
+  .round-img img {
+    width: 250px; /* adjust the width as needed */
+    height: 250px; /* adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 10px; /* add some space between the image and text */
+  }
+  
+  .kk {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px; /* adjust the font size as needed */
+    font-weight: bold; /* adjust the font weight as needed */
+    
+  }
+  .f{
+    font-family:cursive;
+  }
+
+
+  .wrapp-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    color: #795833;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Dancing Script', cursive;
+  }
+  .wrapp-header-span{
+    font-family: 'Dancing Script', cursive !important;
+
+  }
+  
+  /* Adjust styles for SVG icons */
+  .wrapp-header svg {
+    fill: currentColor; /* Match SVG fill color with parent's text color */
+  }
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapp_form {
+    background-color: #f0dfc8;
+    min-width: auto;
+    width: 1250px;
+    height: 300px;
+    padding: 30px 40px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    z-index: 1; /* Ensure form is below header but above background */
+    top: 150px; /* Adjust top position as needed */
+    left: 80px; /* Adjust left position as needed */
+  }
+  
+  
+  
+  .exit-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 38px;
+    color: #795833;
+    z-index: 3;
+  }
+  
+
+
+
+
+
+
+.wrapp .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #795833;
+    padding: 5px 5px 1px 5px;
+}
+
+
+
+.gray{
+    text-decoration: underline;
+}
+
+.wrapp_g1 {
+    background-color: #f0dfc8;
+    min-width: auto;
+    width: 1250px;
+    height: 500px;
+    padding: 30px 40px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    z-index: 1; /* Ensure form is below header but above background */
+    top: 250px; /* Adjust top position as needed */
+    left: 80px; /* Adjust left position as needed */
+  }
+
+
+  .tp{
+    position: relative;
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .px-4{
+    padding-left: 5rem;
+    padding-right:5rem;
+  }
+
+  .p-8{
+    padding: 5rem;
+  }
+
+  .bg-gray-700{
+    --tw-bg-opacity: 1;
+    background-color: rgb(77 77 77 / var(--tw-bg-opacity));
+  }
+
+
+
+
+  
+  .wrapp_g2 {
+    background-color: #f0dfc8;
+    min-width: auto;
+    width: 1250px;
+    height: 450px;
+    padding: 30px 40px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    z-index: 1; /* Ensure form is below header but above background */
+    top: 50px; /* Adjust top position as needed */
+    left: 80px; /* Adjust left position as needed */
+  }
+  .vid{
+  width: 18rem;
+  }
+
+  .vid-r{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 370px;
+    height: 300px;
+    border-radius: 50px;
+  }

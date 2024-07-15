@@ -65,6 +65,18 @@ const ProfileMenu = ({ to }) => {
                         </span>
                     </Link>
                 </li>
+
+                <li className='justify-start'>
+                    <Link className="dropdown-item" to="/InPage" onClick={closeMenu}>
+                        Card
+                        <span className="material-symbols-outlined pl-4">
+                            home
+                        </span>
+                    </Link>
+                </li>
+
+
+
                 <li className='justify-start'>
                     <Link className="dropdown-item" to="/login-signup" onClick={closeMenu}>
                         Login/Signup

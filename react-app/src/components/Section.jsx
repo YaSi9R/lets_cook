@@ -1,6 +1,6 @@
 import React from 'react';
 import { sectionCards, categories } from "../apiData";
-import { LuSearch } from "react-icons/lu";
+// import { LuSearch } from "react-icons/lu";
 
 
 
@@ -80,7 +80,7 @@ const Section = () => {
                     <form method="GET" action="/search" class="relative drop-shadow-md text-center items-center  w-full flex  flex-row items-center  border-2 border-gray-400" role="search">
 
 
-                        <LuSearch className='  flex absolute bg-transparent ml-2 font-semibold' />
+                        {/* <LuSearch className='  flex absolute bg-transparent ml-2 font-semibold' /> */}
 
                         <input class=" flex search-form-input  pl-[32px] items-center w-full h-[50px] " name="s" type="search" aria-label="Search our recipes" placeholder="Search our recipes" />
                         <button class="hidden">Search</button>
